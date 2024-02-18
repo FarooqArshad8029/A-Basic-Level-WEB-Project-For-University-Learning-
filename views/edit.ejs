@@ -1,0 +1,36 @@
+<%- include("partials/dashboardHeader") -%>
+
+
+<div class="card bg-light" style="width: 100%;display: block;align-items: center;text-align: center;">
+        
+    <ul class="list-group list-group-flush" style = "display: flex;align-items: center;text-align: center;">
+      <%  data.forEach( item => {  %>      
+        <div class ="m-5"style="display: flex">
+            <div class="card mb-3 " style="max-width: 700px; max-height: 550px;">
+              <div class="row g-10 ">
+                <div class="col-md-4">
+                  <img src="/uploads/<%= item.image %>" class="img-fluid rounded-start" alt="img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text">Name : <%= item.name%></p>
+                    <p class="card-text">Price : <%= item.price%></p>
+                    <p class="card-text">Details : <%= item.description%></p>
+                    <p class="card-text">CreatedDate : <%= item.createdDate%></p>
+                    <p class="card-text">Category : <%= item.category%></p>
+                    <p class="card-text">Stock : <%= item.stock%></p>
+                    <p class="card-text">image : <%= item.image%></p>
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    <button type="button" class="btn btn-secondary"> <a href="/editProduct/<%= item._id%>">Edit</a></button>
+                    <button type="button" class="btn btn-secondary"> <a href="/delete/<%= item._id%>">delete</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      <% })  %>
+        
+      </ul>
+  </div>
+
+<%- include("partials/footer") -%>

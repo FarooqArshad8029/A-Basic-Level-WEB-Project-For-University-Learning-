@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+    />
+    <meta
+      name="description"
+      content="Dashpro -  Admin Panel HTML Dashboard Template"
+    />
+    <meta name="author" content="Spruko Technologies Private Limited" />
+    <meta
+      name="keywords"
+      content="responsive admin template,bootstrap dashboard theme,simple dashboard template,bootstrap admin dashboard,bootstrap 4 template admin,template admin bootstrap 4,template bootstrap 4 admin,quality dashboard template,bootstrap 4 admin template,premium bootstrap template,bootstrap simple dashboard,simple admin panel template,dashboard admin bootstrap 4,html css dashboard template,admin dashboard bootstrap 4,bootstrap 4 admin dashboard,bootstrap dashboard template"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/brand/favicon.ico" type="image/x-icon" />
+
+    <!-- Title -->
+    <title>LOGO</title>
+
+    <!-- Bootstrap css-->
+    <link
+      href="assets/plugins/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icons css-->
+    <link href="assets/css/icons.css" rel="stylesheet" />
+
+    <!-- Style css-->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/dark-boxed.css" rel="stylesheet" />
+    <link href="assets/css/boxed.css" rel="stylesheet" />
+    <link href="assets/css/skins.css" rel="stylesheet" />
+    <link href="assets/css/dark-style.css" rel="stylesheet" />
+
+    <!-- Color css-->
+    <link
+      id="theme"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="assets/css/colors/color.css"
+    />
+
+    <!-- Select2 css -->
+    <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" />
+
+    <!-- P-SCROLL css-->
+    <link
+      href="assets/plugins/perfect-scrollbar/perfect-scrollbar.css"
+      rel="stylesheet"
+    />
+
+    <!-- Internal DataTables css-->
+    <link
+      href="assets/plugins/datatable/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/plugins/datatable/responsivebootstrap4.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/plugins/datatable/fileexport/buttons.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <style>
+      .displayNone {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="horizontalmenu">
+    <!-- Loader -->
+    <div id="global-loader">
+      <img src="assets/img/loader.svg" class="loader-img" alt="Loader" />
+    </div>
+    <!-- End Loader -->
+
+    <!-- Page -->
+    <div class="page main-signin-wrapper">
+      <!-- Row -->
+      <div class="row signpages justify-content-center sign-3">
+        <div class="col-md-12 col-xl-7">
+          <div class="sign3">
+            <div class="card">
+              <div class="">
+                <div class="card-body mt-2 mb-2 p-5">
+                  <a href="/"><h1>LOGO</h1></a>
+
+                  <div class="clearfix"></div>
+                  <form action="/signUpUser" method="post">
+                    <h2 class="text-left mb-4">Sign Up</h2>
+                    <div class="form-group text-left">
+                      <label class="">First Name</label>
+                      <input
+                        name="firstName"
+                        id="FirstName"
+                        class="form-control rounded-11"
+                        placeholder="First Name"
+                        type="text"
+                        required
+                      />
+                      <div id="errorFname" class="displayNone">
+                        Please provide your name!
+                      </div>
+                    </div>
+
+                    <div class="form-group text-left">
+                      <label class="">Last Name</label>
+                      <input
+                        name="lastName"
+                        id="LastName"
+                        class="form-control rounded-11"
+                        placeholder="Last Name"
+                        type="text"
+                        required
+                      />
+                      <div id="errorLname" class="displayNone">
+                        Please provide your complete name!
+                      </div>
+                    </div>
+
+                    <div class="form-group text-left">
+                      <label class="">Email Address</label>
+                      <input
+                        name="email"
+                        id="EmailAddress"
+                        class="form-control rounded-11"
+                        placeholder="default@example.com"
+                        type="text"
+                        required
+                      />
+                      <div id="erroremail" class="displayNone">
+                        Please provide your Email!
+                      </div>
+                    </div>
+
+                    <div class="form-group text-left">
+                      <label class="">Phone No</label>
+                      <input
+                        name="phone"
+                        id="PhoneNo"
+                        class="form-control rounded-11"
+                        placeholder="Enter Phone No "
+                        type="text"
+                        max="11"
+                        required
+                      />
+                      <div id="errorphone" class="displayNone">
+                        Please enter phone No
+                      </div>
+                    </div>
+
+                    <div class="form-group text-left">
+                      <label class="">Password</label>
+                      <input
+                        name="password"
+                        id="Password"
+                        class="form-control rounded-11"
+                        placeholder="password"
+                        type="password"
+                        required
+                        minlength="8"
+                        maxlength="30"
+                      />
+                      <div id="errorpassowrd" class="displayNone">
+                        Entered Password must be 8 character long,one Number,one
+                        lowercase and one uppercase letter
+                      </div>
+                      <div id="errorpassword2" class="displayNone">
+                        Password must be Same
+                      </div>
+                    </div>
+
+                    <div class="form-group text-left">
+                      <label class=""> Verify Password</label>
+                      <input
+                        id="VerifyPassword"
+                        class="form-control rounded-11"
+                        placeholder="password"
+                        type="password"
+                        minlength="8"
+                        required
+                      />
+                      <div id="errorVpassword" class="displayNone">
+                        Please again enter your passowrd
+                      </div>
+                    </div>
+
+                    <div class="form-group mb-4 mt-4 text-left">
+                      <label class="custom-control custom-checkbox mb-0">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"
+                          >By creating an account you agree to the
+                          <a href="">Terms and Services</a>and our
+                          <a href="">Privacy Policy</a></span
+                        >
+                      </label>
+                    </div>
+                    <div class="col-12 mt-3">
+                      <button
+                        id="CreateAccount"
+                        type="submit"
+                        class="btn btn-primary rounded-11 btn-block"
+                        onclick="checkValidation()"
+                      >
+                        Create Your Free Account
+                      </button>
+                    </div>
+                    <div class="text-center tx-15 text-muted mt-4">
+                      Already Have an Acoount ?
+                      <a
+                        class="btn-link font-weight-normal text-primary"
+                        href="/signIn"
+                        >Sign IN</a
+                      >
+                    </div>
+                    <div class="error-2 text-center">Forgot Password ?</div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Page -->
+
+    <!---script code for  signup data  --->
+
+    <script type="text/javascript">
+      const checkValidation = () => {
+        const firstName = document.getElementById("FirstName").value;
+        const lastName = document.getElementById("LastName").value;
+        const emailAddress = document.getElementById("EmailAddress").value;
+        const phoneNo = document.getElementById("PhoneNo").value;
+        const password = document.getElementById("Password").value;
+        const verifypassword = document.getElementById("VerifyPassword").value;
+
+        $("#errorFname").css("display", "none");
+        $("#errorLname").css("display", "none");
+        $("#erroremail").css("display", "none");
+        $("#errorphone").css("display", "none");
+        $("#errorpassowrd").css("display", "none");
+        $("#errorpassword2").css("display", "none");
+        $("#errorVpassword").css("display", "none");
+
+        if (firstName.length == 0) {
+          $("#errorFname").css("color", "red");
+          $("#errorFname").css("display", "block");
+          return false;
+        } else if (lastName.length == 0) {
+          $("#errorLname").css("color", "red");
+          $("#errorLname").css("display", "block");
+          return false;
+        } else if (emailAddress.length == 0) {
+          $("#erroremail").css("color", "red");
+          $("#erroremail").css("display", "block");
+          return false;
+        } else if (!emailAddress.includes("@") || !emailAddress.includes(".")) {
+          $("#erroremail").text("Please enter a valid email address");
+          $("#erroremail").css("color", "red");
+          $("#erroremail").css("display", "block");
+          return false;
+        } else if (phoneNo.length == 0) {
+          $("#errorphone").css("color", "red");
+          $("#errorphone").css("display", "block");
+          return false;
+        } else if (password.length == 0) {
+          $("#errorpassowrd").css("color", "red");
+          $("#errorpassowrd").css("display", "block");
+          return false;
+        } else if (verifypassword.length == 0) {
+          $("#errorVpassword").css("color", "red");
+          $("#errorVpassword").css("display", "block");
+          return false;
+        } else if (password != verifypassword) {
+          $("#errorpassword2").css("color", "red");
+          $("#errorpassword2").css("display", "block");
+          return false;
+        } else if (password === verifypassword) {
+          let re = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+          if (!re.test(password)) {
+            $("#errorpassowrd").css("color", "red");
+            $("#errorpassowrd").css("display", "block");
+            return false;
+          } else {
+            signUp();
+            return false;
+          }
+        } else {
+          console.log("checkvalidation Else check ");
+        }
+      };
+
+      const signUp = () => {
+        const firstName = document.getElementById("FirstName").value;
+        const lastName = document.getElementById("LastName").value;
+        const emailAddress = document.getElementById("EmailAddress").value;
+        const phoneNo = document.getElementById("PhoneNo").value;
+        const password = document.getElementById("Password").value;
+        const verifypassword = document.getElementById("VerifyPassword").value;
+
+        const dataobj = {
+          firstName,
+          lastName,
+          emailAddress,
+          phoneNo,
+          password,
+        };
+
+        console.log("dataObj:", dataobj);
+      };
+    </script>
+    <!-- </body> -->
+    <!-- End Page -->
+    <!---SwalFire  --->
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Back-to-top -->
+    <a href="#top" id="back-to-top"><i class="fe fe-arrow-up"></i></a>
+
+    <!-- Jquery js-->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--Internal Apexchart js-->
+    <script src="assets/js/apexcharts.js"></script>
+
+    <!-- Internal Chart.Bundle js-->
+    <script src="assets/plugins/chart.js/Chart.bundle.min.js"></script>
+
+    <!-- Peity js-->
+    <script src="assets/plugins/peity/jquery.peity.min.js"></script>
+
+    <!-- Select2 js-->
+    <script src="assets/plugins/select2/js/select2.min.js"></script>
+
+    <!-- Internal Data Table js -->
+    <script src="assets/plugins/datatable/jquery.dataTables.min.js"></script>
+    <script src="assets/plugins/datatable/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/table-data.js"></script>
+    <script src="assets/plugins/datatable/dataTables.responsive.min.js"></script>
+    <script src="assets/plugins/datatable/fileexport/dataTables.buttons.min.js"></script>
+    <script src="assets/plugins/datatable/fileexport/buttons.bootstrap4.min.js"></script>
+
+    <!--- Perfect-scrollbar js --->
+    <script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <!--- Select2 js --->
+    <script src="assets/plugins/select2/js/select2.min.js"></script>
+    <script src="assets/js/select2.js"></script>
+
+    <!--- Sidebar js --->
+    <script src="assets/plugins/sidebar/sidebar.js"></script>
+
+    <!--- INTERNAL INDEX js  --->
+
+    <script src="assets/js/index.js"></script>
+
+    <!--- Sticky js --->
+    <script src="assets/js/sticky.js"></script>
+
+    <!--- Custom js --->
+    <script src="assets/js/custom.js"></script>
+    <!--- Bootstrap 5 --->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!---Cryptojs --->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+  </body>
+</html>

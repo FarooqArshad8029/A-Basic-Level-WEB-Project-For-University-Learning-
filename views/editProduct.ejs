@@ -1,0 +1,31 @@
+<%- include("partials/dashboardHeader") -%>
+
+
+    <div class="card text-center m-4 " >
+        <form  action ="/updated/<%= data[0]._id%>" method = "post" class="bg-secondry  bg-light p-4  m-4 btn-outline-dark" name = "form1"   enctype = "multipart/form-data" style="width:60%;align-self: center;"  >    
+                <div class = "form_group">    
+                    <label class=""> Name:</label><br>    
+                    <input type = "text" name = "name" value="<%= data[0].name%>" required/>    
+                </div>    
+                <div class = "form_group">    
+                    <label>Description:</label><br> 
+                    <textarea type = "text" name = "description"  required > <%= data[0].description%></textarea>    
+                </div>    
+                <div class = "form_group">    
+                    <label>Price:</label> <br>   
+                    <input type = "number" name = "price" value="<%= data[0].price%>" required/>    
+                </div>    
+                <div class = "form_group">    
+                    <label>Category:</label> <br>   
+                    <input type = "text" name = "Category"  value="<%- data[0].category %>"required/>    
+                </div> 
+                <div class = "form_group">    
+                    <label>Stock:</label><br>
+                    <input type = "number" name = "Stock"  value="<%= data[0].stock%>" required/>    
+                </div>   
+
+                <button type="submit" class="btn btn-primary btn-outline-dark m-4">Save</button>
+        </form>  
+    </div>
+
+<%- include("partials/footer") -%>

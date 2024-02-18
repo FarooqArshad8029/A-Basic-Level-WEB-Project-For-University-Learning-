@@ -1,0 +1,49 @@
+<%- include("partials/header") -%>
+<% if (data == "" ) { %>
+  <div class="text-center m-4" style="display: block; align-items: center; text-align: center;">
+    <h2>Feature Products</h2>
+    <p>New Collection New Designs</p>  
+    <div class="m-4" style="display: inline-flex;">
+      <div class="card mb-3" style="max-width: 700px; max-height: 550px;">
+        <div class="row g-10">
+          <div class="col-md-8">
+            <img src="#" class="img-fluid rounded-start" style="max-height: 200px;" alt="img">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Product Title</h5>
+              <p class="card-text">Product Price</p>
+              <button type="button" class="btn btn-secondary"><a href="#">Show Detail</a></button>
+              <button type="button" class="btn btn-secondary"><a href="#">Buy</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% } else { %>
+  <div class="text-center m-4" style="display: block; align-items: center; text-align: center;">
+    <h2>Feature Products</h2>
+    <p>New Collection New Designs</p>  
+    <div class="m-4" style="display: inline-flex;">
+      <% for(let i=0; i < 4; i++) { %>
+        <div class="card mb-3" style="max-width: 700px; max-height: 550px;">
+          <div class="row g-10">
+            <div class="col-md-8">
+              <img src="/uploads/<%= data[i].image %>" class="img-fluid rounded-start" style="max-height: 200px;" alt="img">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><%= data[i].name %></h5>
+                <p class="card-text"><%= data[i].price %></p>
+                <button type="button" class="btn btn-secondary"><a href="/productDetail/<%= data[i]._id %>">Show Detail</a></button>
+                <button type="button" class="btn btn-secondary"><a href="/cart/<%= data[i]._id %>">Buy</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% } %>
+    </div>
+  </div>
+<% } %>
+<%- include("partials/footer") -%>
